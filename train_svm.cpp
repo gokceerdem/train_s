@@ -518,6 +518,7 @@ int main()
 		// Train the SVM
 		CvSVM SVM;
 		SVM.train(trainingDataMat, labelsMat, Mat(), Mat(), params);
+		//SVM.train_auto(trainingDataMat,labelsMat,Mat(),Mat(),params);
 
 		mysvmstream << svmfile << trainnumber << xmltype;
 		string mysvmfilename = mysvmstream.str();
@@ -563,6 +564,17 @@ int main()
 		Mat testing_classifications = Mat(test_sample_number, 1, CV_32FC1);
 		SVM.predict(testing_data, testing_classifications);
 		cout << testing_classifications << endl;
+
+
+		Mat results(test_sample_number, 1, CV_32FC1);
+	
+        SVM.predict(testing_classifications,true);
+		for (int i = 0; i < test_sample_number; i++)
+		{
+			float predicted = results.at<float>(i, 0);
+			cout << predicted<<endl;}
+
+	
 		//	
 		//cout << "Number of test images:" << endl;
 		//cin >> test_image_number;
