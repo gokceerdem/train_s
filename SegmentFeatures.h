@@ -12,7 +12,7 @@ struct SegmentFeatures{
 	double r; //ratio: (segment area)/(whole image) ratio
 	vector<double> elongation; // min & max elongation lambda1, lambda2
 	//Point mass; // center of mass
-	int segmentLocation;
+	float segmentLocation;
 	vector<double> AverageFilterOutputs;
 	float shaperatio;
 	float hueval;

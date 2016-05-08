@@ -25,9 +25,11 @@ using namespace cv;
   const string type = ".jpg";
   const string crop = "crop_";
   const String imagename1 = "rgbImage_" ;//"night_";
+  const String svmfile = "my_svm_";
+  const string xmltype = ".xml";
   const String quant = "-quantized";
   const char *cstr = imagename1.c_str();
-  const int numberofbins =437;
+   const int numberofbins =436;
   const int numberoffilters = 54;
   const int histSize =8;    // bin size
 

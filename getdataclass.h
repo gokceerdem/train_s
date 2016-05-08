@@ -6,7 +6,7 @@ class getdataclass
 public:
 	float labelsArr[250];
 	float trainArr[250][2];
-	float testArr[100][2];
+	float testArr[1000][2];
 
 	void getTrainData(String trndt){
 		int cidx = 0;
