@@ -1,5 +1,5 @@
 // stdafx.cpp : source file that includes just the standard includes
-// train_svm.pch will be the pre-compiled header
+// test_2_object.pch will be the pre-compiled header
 // stdafx.obj will contain the pre-compiled type information
 
 #include "stdafx.h"

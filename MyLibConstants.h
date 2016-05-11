@@ -22,7 +22,7 @@ using namespace cv;
   int dilation_size = 3; // adjust with you application
   Mat dilation_element = getStructuringElement( MORPH_ELLIPSE,Size( 2*dilation_size + 1, 2*dilation_size+1 ),Point( dilation_size, dilation_size ) );
   const string name = "out-";
-  const string type = ".jpg";
+  const string imtype = ".jpg";
   const string crop = "crop_";
   const String imagename1 = "rgbImage_" ;//"night_";
   const String svmfile = "my_svm_";
